@@ -1,0 +1,25 @@
+body {
+    direction: rtl;
+    padding: 0;
+}
+
+#txtAdd {
+    margin-right: 50px;
+    font-size: 18px;
+}
+
+#btnAdd {
+    padding: 5px;
+}
+
+li {
+    list-style: none;
+    padding: 10px;
+    margin: 5px;
+    border: 1px solid #888888;
+    width: 30%;
+}
+
+.completed{
+    text-decoration:line-through;
+}

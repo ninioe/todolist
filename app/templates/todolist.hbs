@@ -1,0 +1,15 @@
+<h1>הרשימה שלי</h1>
+
+<div>
+    <input type="text" id="txtAdd"> <button {{action "createTask"}} id="btnAdd">הוסף</button>
+
+    <ul>
+    {{#each this.model as |item index|}}
+        <li id="item-{{index}}" class={{if item.is_completed "completed"}}>
+            <input type="checkbox" {{action "toggleIsCompleted" item on="change"}} />
+            <span>{{item.title}}</span>
+        </li>
+    {{/each}}
+    </ul>
+
+</div>
